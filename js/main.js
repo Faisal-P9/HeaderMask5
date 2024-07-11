@@ -96,78 +96,75 @@
       }
 
 
-      let bg = document.getElementById('bg');
-      let planet = document.getElementById('planet1');
-      let big_island = document.getElementById('big_island');
-      let small_island_left = document.getElementById('small_island_left');
-      let small_island = document.getElementById('small_island');
-      let middle_island = document.getElementById('middle_island');
-      let planet2 = document.getElementById('planet2');
-      let grass = document.getElementById('grass');
-      let cloud1 = document.getElementById('cloud1');
-      let cloud2 = document.getElementById('cloud2');
-      let sun = document.getElementById('sun');
-      let header_text = document.getElementById('header__text');
 
-      let bg_black = document.getElementById('bg_black');
-      let planet_black = document.getElementById('planet1_black');
-      let big_island_black = document.getElementById('big_island_black');
-      let small_island_left_black = document.getElementById('small_island_left_black');
-      let small_island_black = document.getElementById('small_island_black');
-      let middle_island_black = document.getElementById('middle_island_black');
-      let planet2_black = document.getElementById('planet2_black');
-      let grass_black = document.getElementById('grass_black');
-      let cloud1_black = document.getElementById('cloud1_black');
-      let cloud2_black = document.getElementById('cloud2_black');
-      let sun_black = document.getElementById('sun_black');
-      let header_text_black = document.getElementById('header__textBlack');
-      let header_paralaxBlack = document.getElementsByClassName('header__paralaxBlack');
-      
+      $(window).scroll(function () {
 
-      
+        let bg = document.getElementById('bg');
+        let planet = document.getElementById('planet1');
+        let big_island = document.getElementById('big_island');
+        let small_island_left = document.getElementById('small_island_left');
+        let small_island = document.getElementById('small_island');
+        let middle_island = document.getElementById('middle_island');
+        let planet2 = document.getElementById('planet2');
+        let grass = document.getElementById('grass');
+        let cloud1 = document.getElementById('cloud1');
+        let cloud2 = document.getElementById('cloud2');
+        let sun = document.getElementById('sun');
+        let header_text = document.getElementById('header__text');
 
-      function parallax() {
-        // if(header_paralaxBlack)
+        let bg_black = document.getElementById('bg_black');
+        let planet_black = document.getElementById('planet1_black');
+        let big_island_black = document.getElementById('big_island_black');
+        let small_island_left_black = document.getElementById('small_island_left_black');
+        let small_island_black = document.getElementById('small_island_black');
+        let middle_island_black = document.getElementById('middle_island_black');
+        let planet2_black = document.getElementById('planet2_black');
+        let grass_black = document.getElementById('grass_black');
+        let cloud1_black = document.getElementById('cloud1_black');
+        let cloud2_black = document.getElementById('cloud2_black');
+        let sun_black = document.getElementById('sun_black');
+        let header_text_black = document.getElementById('header__textBlack');
+        let header_paralaxBlack = document.getElementsByClassName('header__paralaxBlack');
+        
 
+    
         let value = window.scrollY;
         let value2 = window.scrollY;
-
-        if( !(value2 >= 800) ) {
-          planet_black.style.marginLeft  = value2 * -0.3 + 'px';
-          big_island_black.style.marginBottom  = value2 * 0.16 + 'px';
-          small_island_black.style.marginBottom  = value2 * 0.01 + 'px';
-          small_island_left_black.style.marginBottom  = value2 * 0.05 + 'px';
-          middle_island_black.style.marginBottom  = value2 * 0.05 + 'px';
-          planet2_black.style.marginLeft  = value2 * 0.2 + 'px';
-          // color_cloud_black.style.marginLeft  = value2 * -0.25 + 'px';
-          // planet2_black.style.marginBottom  = value2 * -0.05 + 'px';
-          grass_black.style.marginTop = value2 * -0.12 + 'px';
-          header_text_black.style.marginTop = value2 * 0.25 + 'px';
-          sun_black.style.marginBottom = value2 * -0.2 + 'px';
-        }
-
-
-
-        if( !(value >= 800) ) {
-          // bg.style.opacity  = 0 + (value * 0.003);
-          planet.style.marginLeft  = value * -0.3 + 'px';
-          big_island.style.marginBottom  = value * 0.16 + 'px';
-          small_island.style.marginBottom  = value * 0.01 + 'px';
-          small_island_left.style.marginBottom  = value * 0.05 + 'px';
-          middle_island.style.marginBottom  = value * 0.05 + 'px';
-          planet2.style.marginLeft  = value * 0.2 + 'px';
-          // color_cloud.style.marginLeft  = value * -0.25 + 'px';
-          // planet2.style.marginBottom  = value * -0.05 + 'px';
-          header_text.style.marginTop = value * 0.35 + 'px';
-          grass.style.marginTop = value * -0.12 + 'px';
-          sun.style.marginBottom = value * -0.2 + 'px';
-        }
-      }
-
-      $(window).on('scroll', function(){
-
-        window.requestAnimationFrame(parallax);
         
+        console.log(header_paralaxBlack[0].style.opacity)
+        // if(header_paralaxBlack)
+
+          if( !(value2 >= 800) ) {
+            planet_black.style.marginLeft  = value2 * -0.3 + 'px';
+            big_island_black.style.marginBottom  = value2 * 0.16 + 'px';
+            small_island_black.style.marginBottom  = value2 * 0.01 + 'px';
+            small_island_left_black.style.marginBottom  = value2 * 0.05 + 'px';
+            middle_island_black.style.marginBottom  = value2 * 0.05 + 'px';
+            planet2_black.style.marginLeft  = value2 * 0.2 + 'px';
+            // color_cloud_black.style.marginLeft  = value2 * -0.25 + 'px';
+            // planet2_black.style.marginBottom  = value2 * -0.05 + 'px';
+            grass_black.style.marginTop = value2 * -0.12 + 'px';
+            header_text_black.style.marginTop = value2 * 0.25 + 'px';
+            sun_black.style.marginBottom = value2 * -0.2 + 'px';
+          }
+
+
+
+          if( !(value >= 800) ) {
+            bg.style.opacity  = 0 + (value * 0.003);
+            planet.style.marginLeft  = value * -0.3 + 'px';
+            big_island.style.marginBottom  = value * 0.16 + 'px';
+            small_island.style.marginBottom  = value * 0.01 + 'px';
+            small_island_left.style.marginBottom  = value * 0.05 + 'px';
+            middle_island.style.marginBottom  = value * 0.05 + 'px';
+            planet2.style.marginLeft  = value * 0.2 + 'px';
+            // color_cloud.style.marginLeft  = value * -0.25 + 'px';
+            // planet2.style.marginBottom  = value * -0.05 + 'px';
+            header_text.style.marginTop = value * 0.25 + 'px';
+            grass.style.marginTop = value * -0.12 + 'px';
+            sun.style.marginBottom = value * -0.2 + 'px';
+          }
+
 
       });
 

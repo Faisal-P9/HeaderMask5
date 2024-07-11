@@ -3,8 +3,7 @@
 *::after {
   margin: 0px;
   padding: 0px;
-  box-sizing: inherit;
-  scroll-behavior: smooth; }
+  box-sizing: inherit; }
 
 html {
   font-size: 62.5%;
@@ -515,8 +514,7 @@ body {
 .header {
   position: relative;
   height: 120vh;
-  background: linear-gradient(to right, #f8fdfc, #f8fdfc);
-  scroll-behavior: smooth; }
+  background: linear-gradient(to right, #f8fdfc, #f8fdfc); }
   .header__paralaxBlack {
     position: sticky;
     width: 100%;
@@ -528,15 +526,13 @@ body {
     mask-size: cover;
     mask-position: 0% 0%;
     transition: -webkit-mask-position;
-    scroll-behavior: smooth;
     animation: maskAnimation 1000ms steps(45) 200ms forwards; }
     .header__paralaxBlack img {
       position: absolute;
       bottom: 0%;
       width: 100%;
       transition: margin-bottom 0.3s linear, margin-top 0.3s linear;
-      filter: grayscale(1);
-      scroll-behavior: smooth; }
+      filter: grayscale(1); }
   .header__paralaxColor {
     position: sticky;
     height: 100%;
@@ -546,8 +542,7 @@ body {
       position: absolute;
       bottom: 0%;
       width: 100%;
-      transition: margin-bottom 0.3s linear, margin-top 0.3s linear;
-      scroll-behavior: smooth; }
+      transition: margin-bottom 0.3s linear, margin-top 0.3s linear; }
 
 @keyframes maskAnimation {
   0% {
